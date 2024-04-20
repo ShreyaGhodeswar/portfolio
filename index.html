@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">       
+    <div class="container">
+        <nav>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpgoCIXx6to6nlslxPJkSH4avU2BGwRwL7_EqKCo_nUQ&s"  class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hi, I'm Shreya<br>  from VJTI. </h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+<div class="container">
+    <div class="row">
+        <div class="about-col-1">
+             <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3My8x64QI0dKhTeiK1oCvnsS0fX-jHtiYMlsiYUhphg&s>
+    </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>I am outgoing, dedicated, and open-minded. <br>I get across to people and adjust to changes with ease.<br> I believe that a person should work on developing their professional skills and learning new things all the time.</p>
+            
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>   
+            <div class="tab-contents  active-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br>Web app Development</li>
+                <li><span>Programming Language</span><br>C++</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2022</span><br>Participated in LIT 6Model United Nations</li>
+                <li><span>2022</span><br>Participated in Science Fest of Raman Science Center</li>
+                <li><span>2023</span><br>Technovanza Bot Making</li>
+                <li><span>2023</span><br>SRA Bot Making</li>
+            </ul>
+            </div>       
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2021</span><br>SSC Pass Out from B.K.V.V.,Nagpur</li>
+                <li><span>2023</span><br>HSC Pass Out from Taywade College,Nagpur</li>
+                <li><span>Current Status</span><br>Pursuing B.Tech in VJTI in IT,Mumbai</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <br>
+        <div class="work-list">
+            <div class="work"><ul>
+                
+              <li><span>My recent works include :</span><br><br>>Making of an <b><i>Aqua Bot </i></b>that runs on battery.<br>>My <b><i>Resume</i></b>.<br>>Making of a <b><i>Self-Balancing</i></b> and <b><i>Line Following Bot </i></b> using <b><i>C/C++</i></b>.</li>
+            </ul>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1> <br>
+               <p><img src="https://static.vecteezy.com/system/resources/previews/016/716/465/original/gmail-icon-free-png.png" height="20" width="20"> ghodeswarshreya19@gmail.com</p>
+                <p><img src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png" height="20" width="20"> shreyaa_g._</p>
+                <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ0iQca0ZMHWQKH9S9KAeEjPAY4IirTisPdz16ycx3vA&s" height="20" width="20"> GhodeswarS80044</p>
+            </div>
+
+            </div>
+        </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+</body>
+</html>
